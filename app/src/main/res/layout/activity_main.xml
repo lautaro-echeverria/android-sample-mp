@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mPID: "
+        app:layout_constraintBottom_toTopOf="@+id/emailET"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/text1" />
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/LL2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailET"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="376dp">
+
+        <Button
+            android:id="@+id/logPageViewBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="Log Page View"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            tools:layout_editor_absoluteY="422dp" />
+
+        <Button
+            android:id="@+id/loginBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="Login"
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="422dp" />
+
+        <Button
+            android:id="@+id/logoutBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="Logout"
+            tools:layout_editor_absoluteX="301dp"
+            tools:layout_editor_absoluteY="422dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/LL1">
+
+        <LinearLayout
+            android:id="@+id/userAttrLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/userAttrKeyET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="User Attr Key"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/userAttrValET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="User Attr Val"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/modifyAttrBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Modify" />
+
+            <Button
+                android:id="@+id/removeAttrBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Remove" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/updateCustomerIDBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="customerIdUpdate" />
+
+        <include layout="@layout/custom_event" />
+
+        <include layout="@layout/purchase_event" />
+
+        <include layout="@layout/impression_event" />
+
+        <include layout="@layout/consent_state" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnWebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="567dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="116dp"
+        android:text="Web View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "621391172511",
+    "project_id": "lautaro-s-test",
+    "storage_bucket": "lautaro-s-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621391172511:android:da17b2059e3d031dee63aa",
+        "android_client_info": {
+          "package_name": "com.example.mpandroidapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621391172511-fnra9tn4l985dv3viopv9l1fdd5lnotm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbG_keJ6fsw6nyVzIBtrZB2ReZEPMkySs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621391172511-fnra9tn4l985dv3viopv9l1fdd5lnotm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

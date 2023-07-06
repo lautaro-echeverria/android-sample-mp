@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "mPAndroidApp"
+include ':app', ':mparticle-android-integration-appsflyer'
+project(':mparticle-android-integration-appsflyer').projectDir = new File('app/libs/mparticle-android-integration-appsflyer')
